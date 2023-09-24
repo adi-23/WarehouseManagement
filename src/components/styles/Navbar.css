@@ -1,10 +1,10 @@
 .navbar {
-position: fixed; /* Fixed position */
+position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #007bff; /* Navbar background color */
-  color: #fff; /* Text color */
+  background-color: #007bff; 
+  color: #fff; 
   display: flex;
   justify-content: space-between;
   align-items: center;
