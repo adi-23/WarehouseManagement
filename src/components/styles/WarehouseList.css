@@ -1,0 +1,57 @@
+.WarehouseList{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  select,
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for the submit button */
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

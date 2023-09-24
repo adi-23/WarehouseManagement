@@ -1,0 +1,18 @@
+.navbar {
+position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007bff; /* Navbar background color */
+  color: #fff; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000; 
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
