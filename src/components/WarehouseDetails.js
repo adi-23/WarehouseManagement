@@ -4,13 +4,14 @@ import './styles/WarehouseDetails.css'
 import { connect } from 'react-redux';
 import NavBar from './Navbar';
 function WarehouseDetails(wareHouseState) {
-
-    const { state } = useLocation();
     const navigate = useNavigate();
-    // const {wareHouses} = wareHouseState
-    // const warehouse = wareHouses.find(item => item.id==state.id)
+    if(!wareHouseState.getData){
+        navigate('/');
+        return null;
+    }
+    
     const warehouse = wareHouseState.getData;
-    console.log(warehouse)
+    
 
     const handleEdit = () => {
         navigate(`/edit/${warehouse.id}`);

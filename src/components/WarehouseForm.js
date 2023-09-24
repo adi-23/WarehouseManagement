@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,RedirectFunction } from 'react-router-dom';
 import './styles/WarehouseForm.css'
 import NavBar from './Navbar';
 
 function WarehouseForm(warhouseState) {
+    
+    
     const warhouse = warhouseState.getData;
     const [name, setName] = useState(warhouse.name);
     const [city, setCity] = useState(warhouse.city);
@@ -13,6 +15,7 @@ function WarehouseForm(warhouseState) {
     const [space, setSpace] = useState(warhouse.space_available);
     const [live, setLive] = useState(warhouse.is_live)
     const navigate = useNavigate()
+
     const handleEdit = () => {
         store.dispatch({
             type: "EDIT", payload: {
